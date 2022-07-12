@@ -2,10 +2,10 @@
 A Chinese parabank.
 
 
-## download
-* [Baidu Netdisk](https://): download in Baidu Netdisk
+## Download
+* [Baidu Netdisk](https://): download in Baidu Netdisk, 
 
-### files
+### Files
 8 files in total.
 
 parazh.7z include 6 files: 
@@ -14,11 +14,11 @@ parazh.7z include 6 files:
 
 * src.dev.bpe and tgt.dev.bpe contain 10k sentence pairs.
 
-*src.test.bpe and tgt.test.bpe contain 10k sentence pairs.
+* src.test.bpe and tgt.test.bpe contain 10k sentence pairs.
 
 tgt.vcb.bpe and tgt.cds is for BPE.
 
-## scripts
+## Scripts
 All files is performed BPE with 32k merge operation by subword-nmt:
 ```bash
 subword-nmt apply-bpe -c tgt.cds --vocabulary c --vocabulary-threshold 8 < src.train > src.train.bpe
