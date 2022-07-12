@@ -19,7 +19,7 @@ parazh.7z include 6 files:
 tgt.vcb.bpe and tgt.cds is for BPE.
 
 ## Scripts
-All files is performed BPE with 32k merge operation by subword-nmt:
+Each file is performed BPE with 32k merge operation by subword-nmt:
 ```bash
 subword-nmt apply-bpe -c tgt.cds --vocabulary c --vocabulary-threshold 8 < src.train > src.train.bpe
 subword-nmt apply-bpe -c tgt.cds --vocabulary tgt.vcb.bpe --vocabulary-threshold 8 < tgt.train > tgt.train.bpe
