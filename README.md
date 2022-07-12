@@ -3,4 +3,4 @@ A Chinese parabank.
 
 
 ## download
-* [MosesDecoder](https://github.com/moses-smt/mosesdecoder): Used during preprocessing
+* [Baidu Netdisk](https://): download in Baidu Netdisk
