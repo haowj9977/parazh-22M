@@ -6,16 +6,22 @@ A Chinese parabank.
 * [Baidu Netdisk](https://): download in Baidu Netdisk
 
 ### files
-parazh.7z include 6 files: 
-src.train.bpe and tgt.train.bpe contain 22M sentence pairs, each sentence at same line of this two files constitute a pair.
-src.dev.bpe and tgt.dev.bpe contain 10k sentence pairs.
-src.test.bpe and tgt.test.bpe contain 10k sentence pairs.
+8 files in total.
 
+parazh.7z include 6 files: 
+
+* src.train.bpe and tgt.train.bpe contain 22M sentence pairs, each sentence at same line of this two files constitute a pair.
+
+* src.dev.bpe and tgt.dev.bpe contain 10k sentence pairs.
+
+*src.test.bpe and tgt.test.bpe contain 10k sentence pairs.
+
+tgt.vcb.bpe and tgt.cds is for BPE.
 
 ## scripts
 All files is performed BPE with 32k merge operation by subword-nmt:
 ```bash
-subword-nmt apply-bpe -c tgt.cds --vocabulary tgt.vcb.bpe --vocabulary-threshold 8 < src.train > src.train.bpe
+subword-nmt apply-bpe -c tgt.cds --vocabulary c --vocabulary-threshold 8 < src.train > src.train.bpe
 subword-nmt apply-bpe -c tgt.cds --vocabulary tgt.vcb.bpe --vocabulary-threshold 8 < tgt.train > tgt.train.bpe
 
 subword-nmt apply-bpe -c tgt.cds --vocabulary tgt.vcb.bpe --vocabulary-threshold 8 < src.dev > src.dev.bpe
