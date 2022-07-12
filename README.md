@@ -16,19 +16,19 @@ parazh.7z include 6 files:
 
 * src.test.bpe and tgt.test.bpe contain 10k sentence pairs.
 
-tgt.vcb.bpe and tgt.cds is for BPE.
+zh.vcb.bpe and zh.cds is used for BPE.
 
 ## Scripts
 Each file is performed BPE with 32k merge operation by subword-nmt:
 ```bash
-subword-nmt apply-bpe -c tgt.cds --vocabulary c --vocabulary-threshold 8 < src.train > src.train.bpe
-subword-nmt apply-bpe -c tgt.cds --vocabulary tgt.vcb.bpe --vocabulary-threshold 8 < tgt.train > tgt.train.bpe
+subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < src.train > src.train.bpe
+subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < tgt.train > tgt.train.bpe
 
-subword-nmt apply-bpe -c tgt.cds --vocabulary tgt.vcb.bpe --vocabulary-threshold 8 < src.dev > src.dev.bpe
-subword-nmt apply-bpe -c tgt.cds --vocabulary tgt.vcb.bpe --vocabulary-threshold 8 < tgt.dev > tgt.dev.bpe
+subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < src.dev > src.dev.bpe
+subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < tgt.dev > tgt.dev.bpe
 
-subword-nmt apply-bpe -c tgt.cds --vocabulary tgt.vcb.bpe --vocabulary-threshold 8 < src.test > src.test.bpe
-subword-nmt apply-bpe -c tgt.cds --vocabulary tgt.vcb.bpe --vocabulary-threshold 8 < tgt.test > tgt.test.bpe
+subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < src.test > src.test.bpe
+subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < tgt.test > tgt.test.bpe
 
 ```
 
