@@ -3,7 +3,7 @@ A Chinese parabank.
 
 
 ## Download
-* [Baidu Netdisk](https://pan.baidu.com/s/1Tc0yYojHdFFVl6gIYeGeiQ?pwd=fvp5) download in Baidu Netdisk. 
+* [Baidu Netdisk](https://pan.baidu.com/s/1mpg0EEWtBUs1l0zIIygLfA) download in Baidu Netdisk(pwd=5bml). 
 
 ## Files
 8 files in total.
@@ -42,6 +42,8 @@ If you use our dataset, we'd appreciate if you cite the following paper:
 ```
 @inproceedings{hao2022parazh-22M,
   title={ParaZh-22M: a Large-Scale Chinese Parabank via Machine Translation},
+  author={Wenjie Hao, Hongfei Xu, Deyi Xiong, Hongying Zan and Lingling Mu},
+  booktitle={Proceedings of the 29th International Conference on Computational Linguistics (COLING)},
   year={2022}
 }
 ```
