@@ -3,42 +3,26 @@ A Chinese parabank.
 
 
 ## Download
-<<<<<<< HEAD
 * [Baidu Netdisk](https://pan.baidu.com/s/1Tc0yYojHdFFVl6gIYeGeiQ) download in Baidu Netdisk(pwd=5bml). 
-=======
-* [Baidu Netdisk](https://pan.baidu.com/s/1mpg0EEWtBUs1l0zIIygLfA) download in Baidu Netdisk(pwd=5bml). 
->>>>>>> f59c4cd016dce652d431bb5c42be30382231d828
+
 
 ## Files
-8 files in total.
+ 5 files in total.
 
-parazh.7z include 6 files: 
+parazh.7z include 3 files: 
 
-* src.train.bpe and tgt.train.bpe contain 22M sentence pairs, each sentence at same line of this two files constitute a pair.
+* tgt.para and out.para contain 22M sentence pairs, sentences at the same line of this two files constitute a pair.
 
-* src.dev.bpe and tgt.dev.bpe contain 10k sentence pairs.
+* each line in dis.para is the edit distance ratio (the edit distance divided by the number of tokens).
 
-* src.test.bpe and tgt.test.bpe contain 10k sentence pairs.
-
-zh.vcb.bpe and zh.cds is used for BPE.
+zh.vcb.bpe and zh.cds is used for BPE (32k merge operations).
 
 ## Scripts
-Each file is performed BPE with 32k merge operation by subword-nmt:
+You can perform BPE with 32k merge operations by subword-nmt:
 ```bash
-subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < src.train > src.train.bpe
-subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < tgt.train > tgt.train.bpe
+subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < tgt.para > tgt.para.bpe
+subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < out.para > out.para.bpe
 
-subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < src.dev > src.dev.bpe
-subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < tgt.dev > tgt.dev.bpe
-
-subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < src.test > src.test.bpe
-subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < tgt.test > tgt.test.bpe
-
-```
-
-You can apply de-BPE by:
-```bash
-sed -r 's/(@@ )|(@@ ?$)//g' < src.dev.bpe > src.dev
 ```
 
 ## Citation
