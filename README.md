@@ -3,7 +3,11 @@ A Chinese parabank.
 
 
 ## Download
+<<<<<<< HEAD
 * [Baidu Netdisk](https://pan.baidu.com/s/1Tc0yYojHdFFVl6gIYeGeiQ) download in Baidu Netdisk(pwd=5bml). 
+=======
+* [Baidu Netdisk](https://pan.baidu.com/s/1mpg0EEWtBUs1l0zIIygLfA) download in Baidu Netdisk(pwd=5bml). 
+>>>>>>> f59c4cd016dce652d431bb5c42be30382231d828
 
 ## Files
 8 files in total.
