@@ -15,10 +15,10 @@ parazh.7z include 3 files:
 
 * each line in dis.para is the edit distance ratio (the edit distance divided by the number of tokens).
 
-zh.vcb.bpe and zh.cds is used for BPE (32k merge operation).
+zh.vcb.bpe and zh.cds are used for BPE (32k merge operations).
 
 ## Scripts
-You can perform BPE with 32k merge operation by subword-nmt:
+You can perform BPE with 32k merge operations by subword-nmt:
 ```bash
 subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < tgt.para > tgt.para.bpe
 subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < out.para > out.para.bpe
