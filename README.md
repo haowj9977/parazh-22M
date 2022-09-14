@@ -3,7 +3,7 @@ A Chinese parabank.
 
 
 ## Download
-* [Baidu Netdisk](https://pan.baidu.com/s/1Tc0yYojHdFFVl6gIYeGeiQ) download in Baidu Netdisk(pwd=5bml). 
+* [Baidu Netdisk](https://pan.baidu.com/s/1htji52Qu7f1FwQFir94CgA) download in Baidu Netdisk(pwd=yrlv). 
 
 
 ## Files
@@ -15,10 +15,10 @@ parazh.7z include 3 files:
 
 * each line in dis.para is the edit distance ratio (the edit distance divided by the number of tokens).
 
-zh.vcb.bpe and zh.cds is used for BPE (32k merge operations).
+zh.vcb.bpe and zh.cds is used for BPE (32k merge operation).
 
 ## Scripts
-You can perform BPE with 32k merge operations by subword-nmt:
+You can perform BPE with 32k merge operation by subword-nmt:
 ```bash
 subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < tgt.para > tgt.para.bpe
 subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8 < out.para > out.para.bpe
