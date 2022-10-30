@@ -3,7 +3,7 @@ A Chinese parabank.
 
 
 ## Download
-* [Baidu Netdisk](https://pan.baidu.com/s/1htji52Qu7f1FwQFir94CgA) download in Baidu Netdisk(pwd=yrlv). 
+* [Baidu Netdisk](https://pan.baidu.com/s/1htji52Qu7f1FwQFir94CgA) download in Baidu Netdisk(pwd=yr1v). 
 
 
 ## Files
@@ -28,10 +28,19 @@ subword-nmt apply-bpe -c zh.cds --vocabulary zh.vcb.bpe --vocabulary-threshold 8
 ## Citation
 If you use our dataset, we'd appreciate if you cite the following paper:
 ```
-@inproceedings{hao2022parazh-22M,
-  title={ParaZh-22M: a Large-Scale Chinese Parabank via Machine Translation},
-  author={Wenjie Hao, Hongfei Xu, Deyi Xiong, Hongying Zan and Lingling Mu},
-  booktitle={Proceedings of the 29th International Conference on Computational Linguistics (COLING)},
-  year={2022}
+@inproceedings{hao-etal-2022-parazh,
+    title = "{P}ara{Z}h-22{M}: A Large-Scale {C}hinese Parabank via Machine Translation",
+    author = "Hao, Wenjie  and
+      Xu, Hongfei  and
+      Xiong, Deyi  and
+      Zan, Hongying  and
+      Mu, Lingling",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.341",
+    pages = "3885--3897",
 }
+
 ```
